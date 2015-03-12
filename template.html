@@ -21,78 +21,68 @@ $("*[data-toggle=tooltip]").tooltip();
 <div class="row skeleton">
     <div id="area0" class="col-xs-6">
         <!-- Questionary -->
-		<!-- Step -1-->
+        <!-- Step -1 -->
 		<div id="step_relevant_filter" class="steps">
             <h1>Is this photo spam?</h1>
-				<p>Sometimes, people collecting photos might accidentally send something not useful, like an advertisement.</p>
-				<p>If this photo is an advertisement or similar you should choose "Spam"</p>
-				<p>Selecting "Spam" will skip this photo</p>
-				<p>Selecting "Not Spam" or "I don't know" will allow you to go ahead with the analysis</p>
-				<p>If you are not sure, select "I don't know"</p>
-            <div id="step_relevant_filter_answer"> <!-- Start DIV for the submission buttons -->
-                <!-- If the user clicks this button, the saved answer will be value="yes"-->
-                <button class="step_relevant_filter btn btn-danger btn-answer" value='Yes'><i class="fa fa-white fa-thumbs-down"></i> Spam</button>
-                <!-- If the user clicks this button, the saved answer will be value="no"-->
-                <button class="step_relevant_filter btn btn-success btn-answer" value='No'><i class="fa fa-white fa-thumbs-up"></i> Not Spam</button>
-                <!-- If the user clicks this button, the saved answer will be value="NoPhoto"-->
-                <button class="step_relevant_filter btn btn-answer" value='NoPhoto'><i class="fa fa-white fa-exclamation"></i> No photo</button>
-                <!-- If the user clicks this button, the saved answer will be value="Unknown"-->
-                <button class="step_relevant_filter btn btn-answer" value='Unknown'><i class="fa fa-white fa-question-sign"></i> I don't know</button>
-            </div><!-- End of DIV for the submission buttons -->
+			<p>Sometimes, people collecting photos might accidentally send something not useful, like an advertisement.</p>
+			<p>If this photo is an advertisement or similar you should choose "Spam"</p>
+			<p>Selecting "Spam" will skip this photo</p>
+			<p>Selecting "Not Spam" or "I don't know" will allow you to go ahead with the analysis</p>
+			<p>If you are not sure, select "I don't know"</p>
+            <div id="step_relevant_filter_answer">
+                <button class="step_relevant_filter btn btn-answer btn-danger"  value='Yes'><i class="fa fa-white fa-thumbs-down"></i> Spam</button>
+                <button class="step_relevant_filter btn btn-answer btn-success" value='No'><i class="fa fa-white fa-thumbs-up"></i> Not Spam</button>
+                <button class="step_relevant_filter btn btn-answer"             value='NoPhoto'><i class="fa fa-white fa-exclamation"></i> No photo</button>
+                <button class="step_relevant_filter btn btn-answer"             value='Unknown'><i class="fa fa-white fa-question-sign"></i> I don't know</button>
+            </div>
         </div>
         <!-- End Step -1 -->
 
-        <!-- Step 0-->
+        <!-- Step 0 -->
         <div id="step_0" class="steps">
             <h1>Can you see animals in the photo?</h1>
-
 			<div class="row help_popup col-xs-12">
-			<i class="fa fa-exclamation-circle"></i> How do I answer this question? <a class="help_popup_a" href="javascript:void(0)">Get some help</a>
+                <i class="fa fa-exclamation-circle"></i> How do I answer this question? <a class="help_popup_a" href="javascript:void(0)">Get some help</a>
 				<div class="help_popup_description col-xs-12">
-					<p>In this question we are just trying to identify photos in which there are animals and therefore would be relevant to the application.</p>
-					<p>If you can see an animal in this photo select “Yes”. Some of the animals you are likely to see in these photos include cows, cats, dogs, horses, elephants, buffalo, sheep, goats, pigs, chickens, and any other livestock.</p>
-					<p>You should also click "Yes" if the animal is dead and/or if you are looking at a skeleton</p>
+    				<p>In this question we are just trying to identify photos in which there are animals and therefore would be relevant to the application.</p>
+    				<p>If you can see an animal in this photo select “Yes”. Some of the animals you are likely to see in these photos include cows, cats, dogs, horses, elephants, buffalo, sheep, goats, pigs, chickens, and any other livestock.</p>
+    				<p>You should also click "Yes" if the animal is dead and/or if you are looking at a skeleton</p>
 					<div class="row">
-						<div class="col-sm-4">
-							<a target="_blank" href="https://dl.dropboxusercontent.com/u/46576246/India/DSCI0091.jpg"><img style="width:400px;" src="https://dl.dropboxusercontent.com/u/46576246/India/DSCI0091.jpg" class="img-thumbnail"></a>
-							<p style="font-size:10px;"><i class="fa fa-picture"></i> <a href="http://yamuna.womenforsustainablecities.org/">Yamuna's Daughters</a></p>
-						</div>
-						<div class="col-sm-4">
-							<a target="_blank" href="http://assets.nydailynews.com/polopoly_fs/1.1286386.1363114197%21/img/httpImage/image.jpg_gen/derivatives/landscape_635/pigs13n-2-web.jpg "><img style="width:400px;" src="http://assets.nydailynews.com/polopoly_fs/1.1286386.1363114197%21/img/httpImage/image.jpg_gen/derivatives/landscape_635/pigs13n-2-web.jpg " class="img-thumbnail"></a>
-							<p style="font-size:10px;"><i class="fa fa-picture"></i> <a href="http://ascendingstarseed.wordpress.com/2013/03/12/number-of-dead-pigs-flooding-shanghai-river-rises-to-nearly-6000/">Associated Press</a></p>
-						</div>
+    					<div class="col-sm-4">
+    						<a target="_blank" href="https://dl.dropboxusercontent.com/u/46576246/India/DSCI0091.jpg"><img style="width:400px;" src="https://dl.dropboxusercontent.com/u/46576246/India/DSCI0091.jpg" class="img-thumbnail"></a>
+    						<p style="font-size:10px;"><i class="fa fa-picture"></i> <a href="http://yamuna.womenforsustainablecities.org/">Yamuna's Daughters</a></p>
+    					</div>
+    					<div class="col-sm-4">
+    						<a target="_blank" href="http://assets.nydailynews.com/polopoly_fs/1.1286386.1363114197%21/img/httpImage/image.jpg_gen/derivatives/landscape_635/pigs13n-2-web.jpg "><img style="width:400px;" src="http://assets.nydailynews.com/polopoly_fs/1.1286386.1363114197%21/img/httpImage/image.jpg_gen/derivatives/landscape_635/pigs13n-2-web.jpg " class="img-thumbnail"></a>
+    						<p style="font-size:10px;"><i class="fa fa-picture"></i> <a href="http://ascendingstarseed.wordpress.com/2013/03/12/number-of-dead-pigs-flooding-shanghai-river-rises-to-nearly-6000/">Associated Press</a></p>
+    					</div>
 					</div>
 					<p>Select "No" if you cannot see any animals, or if you can only see wild birds. This application does not apply to wild birds. For the photo below you should select "No":</p>
 					<div class="row">
-						<div class="col-sm-4">
-							<a target="_blank" href="http://im.rediff.com/news/2013/jun/19yamuna9.jpg"><img style="width:400px;" src="http://im.rediff.com/news/2013/jun/19yamuna9.jpg" class="img-thumbnail"></a>
-							<p style="font-size:10px;"><i class="fa fa-picture"></i> <a href="http://www.rediff.com/news/slide-show/slide-show-1-photos-swollen-yamuna-leaves-15000-homeless-in-delhi/20130619.htm">IBN Live</a></p>
-						</div>
+    					<div class="col-sm-4">
+    						<a target="_blank" href="http://im.rediff.com/news/2013/jun/19yamuna9.jpg"><img style="width:400px;" src="http://im.rediff.com/news/2013/jun/19yamuna9.jpg" class="img-thumbnail"></a>
+    						<p style="font-size:10px;"><i class="fa fa-picture"></i> <a href="http://www.rediff.com/news/slide-show/slide-show-1-photos-swollen-yamuna-leaves-15000-homeless-in-delhi/20130619.htm">IBN Live</a></p>
+    					</div>
 					</div>
 				</div>
 			</div>
 			<p>&nbsp;</p>
-            <div id="step_0_answer"> <!-- Start DIV for the submission buttons -->
-                <!-- If the user clicks this button, the saved answer will be value="yes"-->
+            <div id="step_0_answer">
                 <button class="step_0 btn btn-answer btn-success" value='Yes'><i class="fa fa-white fa-thumbs-up"></i> Yes</button>
-                <!-- If the user cli11ks this button, the saved answer will be value="no"-->
-                <button class="step_0 btn btn-answer btn-danger" value='No'><i class="fa fa-white fa-thumbs-down"></i> No</button>
-				<!-- If the user clicks this button, the saved answer will be value="NoPhoto"-->
-                <button class="step_0 btn btn-answer" value='NotClear'><i class="fa fa-white fa-question-sign"></i>Its not clear</button>
-				<button  data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Did you read the Get Some Help section?"  class="step_0 btn btn-answer" value='Unknown'></i> Don't know</button>
-            </div><!-- End of DIV for the submission buttons -->
+                <button class="step_0 btn btn-answer btn-danger"  value='No'><i class="fa fa-white fa-thumbs-down"></i> No</button>
+                <button class="step_0 btn btn-answer"             value='NotClear'><i class="fa fa-white fa-question-sign"></i>It's not clear</button>
+    			<button class="step_0 btn btn-answer"             value='Unknown' data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Did you read the Get Some Help section?"></i> Don't know</button>
+            </div>
         </div>
         <!-- End Step 0 -->
 
-		<!-- Step 1-->
+		<!-- Step 1 -->
         <div id="step_1" class="steps">
             <h1>What is the animal you are looking at?</h1>
 			<p>Hint: search the internet to find pictures that will help you identify what you are seeing in the photo, you can use the links under each suggested species to start</p>
-            <p>
-            <a target="_blank" id="uri" class="btn" href=""><i class="fa fa-white fa-search"></i> Get more clues about the picture</a>
-            </p>
+            <p><a target="_blank" id="uri" class="btn" href=""><i class="fa fa-white fa-search"></i> Get more clues about the picture</a></p>
 			<div class="row help_popup col-xs-12">
-			<i class="fa fa-exclamation-circle"></i> How do I answer this question? <a class="help_popup_a" href="javascript:void(0)">Get some help</a>
+                <i class="fa fa-exclamation-circle"></i> How do I answer this question? <a class="help_popup_a" href="javascript:void(0)">Get some help</a>
 				<div class="help_popup_description col-xs-12">
 					<p>In this question we are asking you to identify the animal that you are looking at. Livestock are an important asset that provide food, transport, and labour as work animals in agriculture. Their loss through flooding or associated disease can significantly affect livelihoods and have a flow on effect on the local economy.</p>
 					<p>With this application we want to collect data on what types of animals are in the area and whether or not they were affected by the flooding. </p>
@@ -101,11 +91,10 @@ $("*[data-toggle=tooltip]").tooltip();
 					<p>If you think the animal you are looking at is not in the examples given, try looking for lists of livestock for the region or country you are working on. Under the "Other" box there should be a link to a document on the relevant agricultural sector, you can start your search from here.</p>
 					<p>When searching on the internet for more information, try keywords such as "agriculture", "livestock", the name of the country in which you are working. Look for the relevant country’s agricultural department (or similar), and work done by NGO's, or organisations like the Food and Agriculture Organisation (FAO). These organisations often have inventories or reports on the agricultural activities within a particular country.</p>
 					<p>Identifying an animal can often take some time, so don't get discouraged if you feel it is taking too long! And if you are stuck you can always click the "Unknown" button and move onto the next question.</p>
-
 				</div>
 			</div>
 			<p>&nbsp;</p>
-            <div id="step_1_answer"> <!-- Start DIV for the submission buttons -->
+            <div id="step_1_answer">
 				<p><strong>Livestock</strong></p>
                 <ul class="thumbnails">
                     <li class="col-xs-4">
@@ -142,16 +131,16 @@ $("*[data-toggle=tooltip]").tooltip();
                         </div>
 						<p style="font-size:10px;"><i class="fa fa-picture"></i> <a target="_blank" href="https://www.google.ch/?gfe_rd=cr&ei=0UFFU7-eOuHW8gedzoH4BQ#q=poultry+india">Google search: Indian poultry</a></p>
 					</li>
-					</ul>
-					<p>&nbsp;</p>
-					<p>&nbsp;</p>
-					<p>&nbsp;</p>
-					<p>&nbsp;</p>
-					<p>&nbsp;</p>
-					<p>&nbsp;</p>
-					<p>&nbsp;</p>
-					<p>&nbsp;</p>
-					<ul class="thumbnails">
+				</ul>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<ul class="thumbnails">
 					<p><strong>Wildlife and Other</strong></p>
                     <li class="col-xs-4">
                         <div class="thumbnail">
@@ -161,7 +150,6 @@ $("*[data-toggle=tooltip]").tooltip();
                         </div>
 						<p style="font-size:10px;"><i class="fa fa-picture"></i> <a target="_blank" href="https://www.google.com/?gfe_rd=cr&ei=FUNFU_efLeHW8gedzoH4BQ#q=wild+pigs+india">Google search: Indian wild pigs</a></p>
                     </li>
-
                     <li class="col-xs-4">
                         <div class="thumbnail">
                             <img src="http://graphics8.nytimes.com/images/2012/08/07/world/asia/7-Dog-Lover-IndiaInk/7-Dog-Lover-IndiaInk-blog480.jpg">
@@ -189,30 +177,26 @@ $("*[data-toggle=tooltip]").tooltip();
                     </li>
 					<li class="col-xs-4">
 						<div>
-							<p>
-							<span class="label label-info"><i class="fa fa-bullhorn"></i></span>Not in the list? Type your identification here. Try searching the web to identify what you are looking at.
-							</p>
+                            <p><span class="label label-info"><i class="fa fa-bullhorn"></i></span>Not in the list? Type your identification here. Try searching the web to identify what you are looking at.</p>
 							<input id="animal_other" type="text" name="animal_other" onChange="$('#open_answer_1').attr('value',$(this).val())">
-							<br/>
+							<br>
 							<button class="button step_1 btn btn-answer" id="open_answer_1" value="">Done</button>
-						</div><!-- End of DIV for the submission buttons -->
+						</div>
 					</li>
 					<li class="col-xs-4">
                         <div class="thumbnail">
                             <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Vraagteken.svg/200px-Vraagteken.svg.png" style="width: 50%; height: 50%">
-                            <button   data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Did you read the Get Some Help section?" class="step_1 btn btn-answer" value='Unknown'>Unknown</button>
+                            <button class="step_1 btn btn-answer" value='Unknown' data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Did you read the Get Some Help section?">Unknown</button>
                         </div>
                     </li>
 					<p>&nbsp;</p>
 					<p>&nbsp;</p>
-					</div>
                 </ul>
-				<!-- End of DIV for the submission buttons -->
+            </div>
         </div>
         <!-- End Step 1 -->
 
-
-        <!-- Step 2-->
+        <!-- Step 2 -->
         <div id="step_2" class="steps">
             <h1>Is the animal alive?</h1>
 			<div class="row help_popup col-xs-12">
@@ -230,22 +214,18 @@ $("*[data-toggle=tooltip]").tooltip();
 				</div>
 			</div>
 			<p>&nbsp;</p>
-            <div id="step_2_answer"> <!-- Start DIV for the submission buttons -->
-                <!-- If the user clicks this button, the saved answer will be value="yes"-->
+            <div id="step_2_answer">
                 <button class="step_2 btn btn-answer btn-success" value='Yes'><i class="fa fa-white fa-thumbs-up"></i>Yes</button>
-                <!-- If the user cli11ks this button, the saved answer will be value="no"-->
-                <button class="step_2 btn btn-answer btn-danger" value='No'><i class="fa fa-white fa-thumbs-down"></i>No</button>
-				<!-- If the user clicks this button, the saved answer will be value="NoPhoto"-->
-                <button class="step_2 btn btn-answer" value='NotClear'><i class="fa fa-white fa-question-sign"></i>Its not clear</button>
-				<button   data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Did you read the Get Some Help section?" class="step_2 btn btn-answer" value='Unknown'></i>Don't Know</button>
-            </div><!-- End of DIV for the submission buttons -->
+                <button class="step_2 btn btn-answer btn-danger"  value='No'><i class="fa fa-white fa-thumbs-down"></i>No</button>
+                <button class="step_2 btn btn-answer"             value='NotClear'><i class="fa fa-white fa-question-sign"></i>It's not clear</button>
+				<button class="step_2 btn btn-answer"             value='Unknown' data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Did you read the Get Some Help section?"></i>Don't Know</button>
+            </div>
         </div>
         <!-- End Step 2 -->
 
-		<!-- Step 3-->
+		<!-- Step 3 -->
         <div id="step_3" class="steps">
             <h1>Are they in or surrounded by water?</h1>
-
 			<div class="row help_popup col-xs-12">
 				<i class="fa fa-exclamation-circle"></i>How do I answer this question? <a class="help_popup_a" href="javascript:void(0)">Get some help</a>
 				<div class="help_popup_description col-xs-12">
@@ -260,23 +240,18 @@ $("*[data-toggle=tooltip]").tooltip();
 				</div>
 			</div>
 			<p>&nbsp;</p>
-
-            <div id="step_3_answer"> <!-- Start DIV for the submission buttons -->
-                <!-- If the user clicks this button, the saved answer will be value="yes"-->
+            <div id="step_3_answer">
                 <button class="step_3 btn btn-answer btn-success" value='Yes'><i class="fa fa-white fa-thumbs-up"></i> Yes</button>
-                <!-- If the user cli11ks this button, the saved answer will be value="no"-->
-                <button class="step_3 btn btn-answer btn-danger" value='No'><i class="fa fa-white fa-thumbs-down"></i> No</button>
-				<!-- If the user clicks this button, the saved answer will be value="NoPhoto"-->
-                <button class="step_3 btn btn-answer" value='NotClear'><i class="fa fa-white fa-question-sign"></i>Its not clear</button>
-				<button   data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Did you read the Get Some Help section?" class="step_3 btn btn-answer" value='Unknown'> Don't Know</button>
-            </div><!-- End of DIV for the submission buttons -->
+                <button class="step_3 btn btn-answer btn-danger"  value='No'><i class="fa fa-white fa-thumbs-down"></i> No</button>
+                <button class="step_3 btn btn-answer"             value='NotClear'><i class="fa fa-white fa-question-sign"></i>It's not clear</button>
+				<button class="step_3 btn btn-answer"             value='Unknown' data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Did you read the Get Some Help section?"> Don't Know</button>
+            </div>
         </div>
         <!-- End Step 3 -->
 
-		<!-- Step 4-->
+		<!-- Step 4 -->
         <div id="step_4" class="steps">
             <h1>Can you see an animal shelter?</h1>
-
 			<div class="row help_popup col-xs-12">
 				<i class="fa fa-exclamation-circle"></i>How do I answer this question? <a class="help_popup_a" href="javascript:void(0)">Get some help</a>
 				<div class="help_popup_description col-xs-12">
@@ -284,30 +259,26 @@ $("*[data-toggle=tooltip]").tooltip();
 					<p>These temporary structures consisting of a tarpauline stretched over sticks are the most likely shelters that you will see. Animals may also often just be kept outside. </p>
 					<p>Here is an example of a typical tarpaulin animal shelter that you may see in the photos:</p>
 					<div class="row">
-					<div class="col-sm-4">
-						<a target="_blank" href="https://dl.dropboxusercontent.com/u/46576246/India/_DSC1180.jpg"><img style="width:400px;" src="https://dl.dropboxusercontent.com/u/46576246/India/_DSC1180.jpg" class="img-thumbnail"></a>
-						<p style="font-size:10px;"><i class="fa fa-picture"></i> <a href="http://yamuna.womenforsustainablecities.org/">Yamuna's Daughters</a></p>
-						</div>
-					</div>
+    					<div class="col-sm-4">
+    						<a target="_blank" href="https://dl.dropboxusercontent.com/u/46576246/India/_DSC1180.jpg"><img style="width:400px;" src="https://dl.dropboxusercontent.com/u/46576246/India/_DSC1180.jpg" class="img-thumbnail"></a>
+    						<p style="font-size:10px;"><i class="fa fa-picture"></i> <a href="http://yamuna.womenforsustainablecities.org/">Yamuna's Daughters</a></p>
+    					</div>
+	                </div>
 				</div>
 			</div>
 			<p>&nbsp;</p>
-            <div id="step_4_answer"> <!-- Start DIV for the submission buttons -->
-                <!-- If the user clicks this button, the saved answer will be value="yes"-->
+            <div id="step_4_answer">
                 <button class="step_4 btn btn-answer btn-success" value='Yes'><i class="fa fa-white fa-thumbs-up"></i>Yes</button>
-                <!-- If the user cli11ks this button, the saved answer will be value="no"-->
-                <button class="step_4 btn btn-answer btn-danger" value='No'><i class="fa fa-white fa-thumbs-down"></i>No</button>
-				<!-- If the user clicks this button, the saved answer will be value="NoPhoto"-->
-                <button class="step_4 btn btn-answer" value='NotClear'><i class="fa fa-white fa-question-sign"></i>Its not clear</button>
-				<button   data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Did you read the Get Some Help section?" class="step_4 btn btn-answer" value='Unknown'>Don't Know</button>
-            </div><!-- End of DIV for the submission buttons -->
+                <button class="step_4 btn btn-answer btn-danger"  value='No'><i class="fa fa-white fa-thumbs-down"></i>No</button>
+                <button class="step_4 btn btn-answer"             value='NotClear'><i class="fa fa-white fa-question-sign"></i>It's not clear</button>
+				<button class="step_4 btn btn-answer"             value='Unknown' data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Did you read the Get Some Help section?">Don't Know</button>
+            </div>
         </div>
         <!-- End Step 4 -->
 
-		<!-- Step 5-->
+		<!-- Step 5 -->
         <div id="step_5" class="steps">
             <h1>Is it flooded?</h1>
-
 			<div class="row help_popup col-xs-12">
 				<i class="fa fa-exclamation-circle"></i>How do I answer this question? <a class="help_popup_a" href="javascript:void(0)">Get some help</a>
 				<div class="help_popup_description col-xs-12">
@@ -315,35 +286,30 @@ $("*[data-toggle=tooltip]").tooltip();
 					<p>Standing water in the animal shelter can also be dangerous for the animals. Polluted, stagnant flood waters can carry diseases that can be deadly for the animals if they drink the water, or if they have open wounds. Standing in water for extended times can cause various problems on the animals feet and legs, leading to debilitating injury and / or death. </p>
 					<p>Look for damage to the shelter and water in and around the shelter, as in the following examples:</p>
 					<div class="row">
-					<div class="col-sm-4">
-						<a target="_blank" href="https://voiceselsalvador.files.wordpress.com/2011/10/flood-photo.jpg"><img style="width:400px;" src="https://voiceselsalvador.files.wordpress.com/2011/10/flood-photo.jpg" class="img-thumbnail"></a>
-						<p style="font-size:10px;"><i class="fa fa-picture"></i> <a href="https://voiceselsalvador.wordpress.com/2011/10/">Voices on the Border</a></p>
-					</div>
+    					<div class="col-sm-4">
+    						<a target="_blank" href="https://voiceselsalvador.files.wordpress.com/2011/10/flood-photo.jpg"><img style="width:400px;" src="https://voiceselsalvador.files.wordpress.com/2011/10/flood-photo.jpg" class="img-thumbnail"></a>
+    						<p style="font-size:10px;"><i class="fa fa-picture"></i> <a href="https://voiceselsalvador.wordpress.com/2011/10/">Voices on the Border</a></p>
+    					</div>
 					</div>
 				</div>
 			</div>
 			<p>&nbsp;</p>
-            <div id="step_5_answer"> <!-- Start DIV for the submission buttons -->
-                <!-- If the user clicks this button, the saved answer will be value="yes"-->
+            <div id="step_5_answer">
                 <button class="step_5 btn btn-answer btn-success" value='Yes'><i class="fa fa-white fa-thumbs-up"></i>Yes</button>
-                <!-- If the user cli11ks this button, the saved answer will be value="no"-->
-                <button class="step_5 btn btn-answer btn-danger" value='No'><i class="fa fa-white fa-thumbs-down"></i>No</button>
-				<!-- If the user clicks this button, the saved answer will be value="NoPhoto"-->
-                <button class="step_5 btn btn-answer" value='NotClear'><i class="fa fa-white fa-question-sign"></i>Its not clear</button>
-				<button   data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Did you read the Get Some Help section?" class="step_5 btn btn-answer" value='Unknown'>Don't Know</button>
-            </div><!-- End of DIV for the submission buttons -->
+                <button class="step_5 btn btn-answer btn-danger"  value='No'><i class="fa fa-white fa-thumbs-down"></i>No</button>
+                <button class="step_5 btn btn-answer"             value='NotClear'><i class="fa fa-white fa-question-sign"></i>It's not clear</button>
+    			<button class="step_5 btn btn-answer"             value='Unknown' data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Did you read the Get Some Help section?">Don't Know</button>
+            </div>
         </div>
         <!-- End Step 5 -->
 
-        <!-- Last Stepp -->
+        <!-- Last Step -->
         <div id="last_step" class="steps">
             <h1>Thanks! You have fully analyzed one image.</h1>
-            <p> If you have feedback or would like to discuss this analysis, please <a href="https://github.com/geotagx/pybossa/issues">contribute to our open repository</a> or <a href="mailto:cobi.smith@unitar.org?Subject=GeoTag-X feedback" target="_top">send an email</a> if you prefer. </p>
-
-            <div id="last_step_answer"> <!-- Start DIV for the submission buttons -->
-                <!-- If the user clicks this button, the saved answer will be value="yes"-->
+            <p> If you have feedback or would like to discuss this analysis, please <a href="https://github.com/geotagx/pybossa/issues">contribute to our open repository</a> or <a href="mailto:cobi.smith@unitar.org?Subject=GeoTag-X feedback" target="_top">send an email</a> if you prefer.</p>
+            <div id="last_step_answer">
                 <button class="last_step btn btn-answer btn-large btn-success" value='Submit'>Save it and load another one</button>
-            </div><!-- End of DIV for the submission buttons -->
+            </div>
         </div>
         <!-- End Last Step-->
 
