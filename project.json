@@ -1,0 +1,165 @@
+{
+	"name":"Yamuna Animals",
+	"short_name":"animal2013",
+	"category":"Yamuna Monsoon Flooding 2013",
+	"description":"Extract from photos information on the effects of flooding on animals and livestock.",
+	"why":"By contributing to this project, you are helping us extract data on animals possibly affected by the 2013 flooding of the Yamuna River.",
+	"questions":[
+		{
+			"id":1,
+			"title":"Can you see animals in the photo?",
+			"type":"binary",
+			"answer":{
+				"saved_as":"animals"
+			},
+			"branch":[
+				{"no":"finish"}
+			]
+		},
+		{
+			"id":2,
+			"title":"What is the animal you are looking at?",
+			"hint":"You can search the internet to find pictures that will help you identify what you are seeing in the photo.",
+			"type":"illustrated_multiple_choice",
+			"answer":{
+				"saved_as":"animalsId",
+				"choices":[
+					{
+						"label":"Cattle",
+						"value":"Cattle",
+						"illustration":{
+							"image":"https://dl.dropboxusercontent.com/u/46576246/India/DSCI0091.jpg",
+							"source":{
+								"name":"Yamuna's Daughters",
+								"url":"http://yamuna.womenforsustainablecities.org/"
+							}
+						},
+						"more_examples":"https://www.google.com/#q=cattle+india"
+					},
+					{
+						"label":"Buffalo",
+						"value":"Buffalo",
+						"illustration":{
+							"image":"http://dilawars.files.wordpress.com/2012/04/water-buffalo.jpg",
+							"source":{
+								"name":"D. D. Kosambi",
+								"url":"http://dilawars.wordpress.com/2012/04/29/d-d-kosambi-on-water-buffalo/"
+							}
+						},
+						"more_examples":"https://www.google.com/#q=water+buffalo+india"
+					},
+					{
+						"label":"Goat",
+						"value":"Goat",
+						"illustration":{
+							"image":"https://farm6.staticflickr.com/5100/5527299754_da7195bc13_m.jpg",
+							"source":{
+								"name":"Peraion",
+								"url":"https://www.flickr.com/photos/peraion/"
+							}
+						},
+						"more_examples":"https://www.google.com/#q=goat+india"
+					},
+					{
+						"label":"Poultry",
+						"value":"Poultry",
+						"illustration":{
+							"image":"http://upload.wikimedia.org/wikipedia/commons/9/95/Ryabushki_chicken_01.jpg",
+							"source":{
+								"name":"NVO",
+								"url":"http://commons.wikimedia.org/wiki/User:NVO"
+							}
+						},
+						"more_examples":"https://www.google.com/#q=poultry+india"
+					},
+					{
+						"label":"Wild Pigs",
+						"value":"Pigs",
+						"illustration":{
+							"image":"http://m1.i.pbase.com/o2/32/780432/1/105444801.wKMBExcF.LJ4H3730.jpg",
+							"source":{
+								"name":"Jack Folkers",
+								"url":"http://www.pbase.com/image/105444801"
+							}
+						},
+						"more_examples":"https://www.google.com/#q=wild+pigs+india"
+					},
+					{
+						"label":"Dog",
+						"value":"Dog",
+						"illustration":{
+							"image":"http://graphics8.nytimes.com/images/2012/08/07/world/asia/7-Dog-Lover-IndiaInk/7-Dog-Lover-IndiaInk-blog480.jpg",
+							"source":{
+								"name":"NY Times: Enrico Fabian",
+								"url":"http://india.blogs.nytimes.com/2012/08/07/delhi-strays-thrive-on-affection-from-a-few/?_php=true&_type=blogs&_r=0"
+							}
+						},
+						"more_examples":"https://www.google.com/#q=dogs+india"
+					},
+					{
+						"label":"Cat",
+						"value":"Cat",
+						"illustration":{
+							"image":"http://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/India_Street_Cat.jpg/216px-India_Street_Cat.jpg",
+							"source":{
+								"name":"Vincent Paul",
+								"url":"http://commons.wikimedia.org/wiki/File:India_Street_Cat.jpg"
+							}
+						},
+						"more_examples":"https://www.google.com/#q=cat+animal"
+					},
+					{
+						"label":"Elephant",
+						"value":"Elephant",
+						"illustration":{
+							"image":"https://dl.dropboxusercontent.com/u/46576246/India/DSC_2088.JPG",
+							"source":{
+								"name":"Yamuna's Daughters",
+								"url":"http://yamuna.womenforsustainablecities.org/"
+							}
+						},
+						"more_examples":"https://www.google.com/#q=indian+elephant"
+					}
+				]
+			}
+		},
+		{
+			"id":3,
+			"title":"Is the animal alive?",
+			"type":"binary",
+			"answer":{
+				"saved_as":"animalsAlive"
+			},
+			"branch":[
+				{"no":5}
+			]
+		},
+		{
+			"id":4,
+			"title":"Are they in or surrounded by water?",
+			"type":"binary",
+			"answer":{
+				"saved_as":"animalsAliveTrapped"
+			}
+		},
+		{
+			"id":5,
+			"title":"Can you see an animal shelter?",
+			"type":"binary",
+			"answer":{
+				"saved_as":"animalsShelter"
+			},
+			"branch":[
+				{"no":"finish"}
+			]
+		},
+		{
+			"id":6,
+			"title":"Is it flooded?",
+			"type":"binary",
+			"answer":{
+				"saved_as":"animalsShelterFlooded"
+			}
+		}
+	]
+}
