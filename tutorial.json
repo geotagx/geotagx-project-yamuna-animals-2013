@@ -1,0 +1,53 @@
+{
+	"tutorial":[
+		{
+			"image":"http://media2.intoday.in/indiatoday/images/Photo_gallery/flood10_061913094119.jpg",
+			"image_source":"http://indiatoday.intoday.in/gallery/yamuna-water-level-to-break-35-year-record/11/9601.html",
+			"assertions":{
+				"1":{
+					"expects":"yes",
+					"default_message":"Try again. If you are not sure what to look for, check out the help for more information.",
+					"messages":{
+						"yes":"Well done! There are animals in this photo.",
+						"no":"Are you sure there are no animals? Try searching the internet for the animals listed in the help to see what they look like."
+					}
+				},
+				"2":{
+					"expects":"cattle, buffalo",
+					"default_message":"Are you sure you see all the selected animals? If you are not sure what to look for, check out the help for more information.",
+					"messages":{
+						"cattle, buffalo":"Well done! The pair of animals in the water, to the left of the child, are water buffalo, while the one to the right is a cow.",
+						"cattle":"One of the animals in the photo is a cow, however do you see more?",
+						"buffalo":"The two animals in the water are water buffalo, however do you see more?",
+						"unknown":"Try again. If you are not sure what to look for, check out the help for more information.",
+						"notclear":"Try again. If you are not sure what to look for, check out the help for more information."
+					}
+				},
+				"3":{
+					"expects":"yes",
+					"default_message":"Try again. If you are not sure what to look for, check out the help for more information.",
+					"messages":{
+						"yes":"Correct! The animals in this photo are very much alive.",
+						"no":"Are you sure? Do you see anything in the photo that suggests the animals are dead? If you are not sure what to look for, check out the help for more information."
+					}
+				},
+				"4":{
+					"expects":"yes",
+					"default_message":"Try again. If you are not sure what to look for, check out the help for more information.",
+					"messages":{
+						"yes":"Correct! The animals in this photo are either standing or swimming in water.",
+						"no":"Are you sure? If you look around the animal's legs, can you see water?"
+					}
+				},
+				"5":{
+					"expects":"no",
+					"default_message":"Try again. If you are not sure what to look for, check out the help for more information.",
+					"messages":{
+						"no":"Well done! There are no animal shelters in this photo. Note that the animals have been tied to objects to keep them from wandering off.",
+						"yes":"Pay attention to where the animals are standing. Are they out in the open?"
+					}
+				}
+			}
+		}
+	]
+}
