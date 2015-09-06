@@ -4,7 +4,7 @@
 			"image":"http://media2.intoday.in/indiatoday/images/Photo_gallery/flood10_061913094119.jpg",
 			"image_source":"http://indiatoday.intoday.in/gallery/yamuna-water-level-to-break-35-year-record/11/9601.html",
 			"assertions":{
-				"1":{
+				"animals":{
 					"expects":"yes",
 					"default_message":"Try again. If you are not sure what to look for, check out the help for more information.",
 					"messages":{
@@ -12,7 +12,7 @@
 						"no":"Are you sure there are no animals? Try searching the internet for the animals listed in the help to see what they look like."
 					}
 				},
-				"2":{
+				"animalsId":{
 					"expects":"cattle, buffalo",
 					"default_message":"Are you sure you see all the selected animals? If you are not sure what to look for, check out the help for more information.",
 					"messages":{
@@ -23,7 +23,7 @@
 						"notclear":"Try again. If you are not sure what to look for, check out the help for more information."
 					}
 				},
-				"3":{
+				"animalsAlive":{
 					"expects":"yes",
 					"default_message":"Try again. If you are not sure what to look for, check out the help for more information.",
 					"messages":{
@@ -31,7 +31,7 @@
 						"no":"Are you sure? Do you see anything in the photo that suggests the animals are dead? If you are not sure what to look for, check out the help for more information."
 					}
 				},
-				"4":{
+				"animalsAliveTrapped":{
 					"expects":"yes",
 					"default_message":"Try again. If you are not sure what to look for, check out the help for more information.",
 					"messages":{
@@ -39,7 +39,7 @@
 						"no":"Are you sure? If you look around the animal's legs, can you see water?"
 					}
 				},
-				"5":{
+				"animalsShelter":{
 					"expects":"no",
 					"default_message":"Try again. If you are not sure what to look for, check out the help for more information.",
 					"messages":{

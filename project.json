@@ -4,26 +4,22 @@
 	"category":"Yamuna Monsoon Flooding 2013",
 	"description":"Extract from photos information on the effects of flooding on animals and livestock.",
 	"why":"By contributing to this project, you are helping us extract data on animals possibly affected by the 2013 flooding of the Yamuna River.",
-	"questions":[
+	"questionnaire":[
 		{
-			"id":1,
-			"title":"Can you see animals in the photo?",
+			"question":"Can you see animals in the photo?",
+			"key":"animals",
 			"type":"binary",
-			"answer":{
-				"saved_as":"animals"
-			},
-			"branch":[
-				{"no":"finish"}
-			]
+			"branch":{
+				"no":"end"
+			}
 		},
 		{
-			"id":2,
-			"title":"What is the animal you are looking at?",
+			"question":"What is the animal you are looking at?",
+			"key":"animalsId",
 			"hint":"You can search the internet to find pictures that will help you identify what you are seeing in the photo.",
-			"type":"illustrated_multiple_choice",
-			"answer":{
-				"saved_as":"animalsId",
-				"choices":[
+			"type":"illustrative-checklist",
+			"parameters":{
+				"options":[
 					{
 						"label":"Cattle",
 						"value":"Cattle",
@@ -124,42 +120,30 @@
 			}
 		},
 		{
-			"id":3,
-			"title":"Is the animal alive?",
+			"question":"Is the animal alive?",
+			"key":"animalsAlive",
 			"type":"binary",
-			"answer":{
-				"saved_as":"animalsAlive"
-			},
-			"branch":[
-				{"no":5}
-			]
-		},
-		{
-			"id":4,
-			"title":"Are they in or surrounded by water?",
-			"type":"binary",
-			"answer":{
-				"saved_as":"animalsAliveTrapped"
+			"branch":{
+				"no":"animalsShelter"
 			}
 		},
 		{
-			"id":5,
-			"title":"Can you see an animal shelter?",
-			"type":"binary",
-			"answer":{
-				"saved_as":"animalsShelter"
-			},
-			"branch":[
-				{"no":"finish"}
-			]
+			"question":"Are they in or surrounded by water?",
+			"key":"animalsAliveTrapped",
+			"type":"binary"
 		},
 		{
-			"id":6,
-			"title":"Is it flooded?",
+			"question":"Can you see an animal shelter?",
+			"key":"animalsShelter",
 			"type":"binary",
-			"answer":{
-				"saved_as":"animalsShelterFlooded"
+			"branch":{
+				"no":"end"
 			}
+		},
+		{
+			"question":"Is it flooded?",
+			"key":"animalsShelterFlooded",
+			"type":"binary"
 		}
 	]
 }
